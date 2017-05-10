@@ -1,0 +1,401 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sexta aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section --></head>
+
+<body onLoad="MM_preloadImages('imagenes/4demayo2.jpg','imagenes/pue8.png')">
+
+  <div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"   data-back-btn-theme="b">
+    <h1>Batalla de Puebla</h1>
+  </div>
+    <div data-role="main" class="oi-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>4 de Mayo</h1>
+        <div>
+         <br>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('1','','imagenes/4demayo2.jpg',1)"><img src="imagenes/4demayo.png" width="135" height="130" id="1"></a> </div>
+    
+      </div>
+     </div>
+     
+      <div data-role="main" class="oi-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>5 de Mayo</h1>
+       <div>
+         <br>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('2','','imagenes/pue8.png',1)"><img src="imagenes/batallap.jpg" width="135" height="130" id="2"></a> </div> 
+     </div>
+      </div>
+      
+       <div data-role="main" class="oi-content">
+     <div data-role="collapsible" data-content-theme="false">
+       <h1>Leyenda del 5 de Mayo</h1>
+       <div>
+        <div>
+         <br>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('y','','imagenes/pue8.png',1)"><img src="imagenes/pue4.jpg" width="135" height="130" id="y"></a> </div> 
+       </div>
+          </div>
+
+      
+    <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">  
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Motivos de la Batalla del 5 de Mayo</h2>
+          <p>¿Por que se dio esta batalla?</p>
+        </a>
+      </li>
+    </ul>
+    
+     <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">  
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Batalla 4 de Mayo</h2>
+          <p>Se muestra la informacion</p>
+        </a>
+      </li>
+    </ul>
+    
+     <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">  
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Batalla del 5 de Mayo</h2>
+          <p>Se muestra la informacion</p>
+        </a>
+      </li>
+    </ul>
+    
+     <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">  
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Heroes de la batalla</h2>
+          <p>Se muestran imagenes</p>
+        </a>
+      </li>
+    </ul>
+    
+     <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">  
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Monumentos de la batalla</h2>
+          <p>Se muestran imagenes de los diferentes monumentos</p>
+        </a>
+      </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+
+ 
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/pue3.jpg" alt="pue3" title="pue3" id="wows1_0"/></li>
+		<li><img src="data1/images/bpuebla.jpg" alt="bpuebla" title="bpuebla" id="wows1_1"/></li>
+		<li><img src="data1/images/ignaciozaragoza.jpg" alt="ignaciozaragoza" title="ignaciozaragoza" id="wows1_2"/></li>
+		<li><img src="data1/images/pue8.png" alt="pue8" title="pue8" id="wows1_3"/></li>
+		<li><img src="data1/images/batallap.jpg" alt="batallap" title="batallap" id="wows1_4"/></li>
+		<li><img src="data1/images/pue2.jpg" alt="pue2" title="pue2" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/pue4.jpg" alt="bootstrap slider" title="pue4" id="wows1_6"/></a></li>
+		<li><img src="data1/images/pueb.jpg" alt="pueb" title="pueb" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="pue3"><span><img src="data1/tooltips/pue3.jpg" alt="pue3"/>1</span></a>
+		<a href="#" title="bpuebla"><span><img src="data1/tooltips/bpuebla.jpg" alt="bpuebla"/>2</span></a>
+		<a href="#" title="ignaciozaragoza"><span><img src="data1/tooltips/ignaciozaragoza.jpg" alt="ignaciozaragoza"/>3</span></a>
+		<a href="#" title="pue8"><span><img src="data1/tooltips/pue8.png" alt="pue8"/>4</span></a>
+		<a href="#" title="batallap"><span><img src="data1/tooltips/batallap.jpg" alt="batallap"/>5</span></a>
+		<a href="#" title="pue2"><span><img src="data1/tooltips/pue2.jpg" alt="pue2"/>6</span></a>
+		<a href="#" title="pue4"><span><img src="data1/tooltips/pue4.jpg" alt="pue4"/>7</span></a>
+		<a href="#" title="pueb"><span><img src="data1/tooltips/pueb.jpg" alt="pueb"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider.com</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    </div>
+    
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div>
+      <img src="res/android/mdpi.png" width="50" height="50"> </div> 
+     <div>
+       <h4>Aplicacion 6</h4>
+       <h4>Dulce Maria Martinez Olivos</h4>
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>
+   </div>
+  </div>
+ </div>
+  </div>
+  </div>
+ </div>
+     
+    
+   
+   <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Motivos de la Batalla del 5 de Mayo</h1>
+     </div>  
+     
+      <div data-role="content" align="center">
+       <div>
+         <p>
+         Debido principalmente a la cantidad de deudas, , Inglaterra y España subscribieron el Convenio de Londres, por el cual se comprometieron a intervenir por el uso de la fuerza en México para reclamar sus derechos como acreedores, mientras tanto el Presidente Benito Juárez declaró suspendidos los compromisos adquiridos y aplazó pagar la deuda a las naciones europeas. Tras desembarcar en Veracruz, España e Inglaterra aceptaron las explicaciones mexicanas dadas en los Tratados de La Soledad, los cuales tenían como fundamento, el respeto a la soberanía territorial, el reconocimiento de las naciones acreedoras al Estado Mexicano, la entrada al terreno de las negociaciones para llegar a acuerdos en común, que beneficiaría tanto a la República Mexicana, como a los intereses de las potencias invasoras, y por último, se permitiría que los soldados de los tres países se establecieran en las ciudades mexicanas de Orizaba, Córdoba y Tehuacán durante las negociaciones, debido a lo malsano del clima imperante en el puerto de Veracruz; en caso contrario, los soldados de las tres potencias se retirarían a las costas de Veracruz para así comenzar las hostilidades.
+        </p>
+        <br>
+        <br>
+        <img src="imagenes/motivos1.jpg" width="90" height="150"> <img src="imagenes/motivos2.jpg" width="90" height="150"> <img src="imagenes/motivos3.jpg" width="130" height="150">
+<div data-role="footer" data-theme="a" data-position="fixed">
+  <div>
+       <img src="res/android/mdpi.png" width="50" height="50"> </div>
+       <div>
+       <h4>App6,DMMO</h4>
+       </div>
+       </div>
+       </div>
+       </div>
+       </div>
+   
+       </div>
+       </div>
+       </div>
+       </div>
+ </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     
+     
+
+    
+   <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Batalla del 4 de Mayo</h1>
+     </div>
+     <div data-role="content" align="center">
+       <div>
+         <p>
+        La Batalla de Atlixco tuvo lugar el 4 de mayo de 1862 en las inmediaciones de la Hacienda de las Traperas en Atlixco en el estado de Puebla, México, entre elementos del ejército mexicano de la república, al mando de los generales Antonio Carvajal y Tomás O'Horan contra las tropas al servicio del Segundo Imperio Mexicano comandadas por el general José María Cobos y de Leonardo Márquez, compuesta de soldados conservadores mexicanos en apoyo de envío de refuerzos para llevar a cabo la Batalla de Puebla, durante la Segunda Intervención Francesa en México.1
+Esta batalla culminó con una victoria republicana y debido a esto el grupo conservador de Márquez no pudo lograr su objetivo de auxiliar a las tropas francesas del Conde de Lorencez en la batalla de Puebla.
+        </p>
+        <br>
+        <br>
+        <p>
+        PARA MAS INFORMACION CONSULTA ESTOS LINKS:
+        </p>
+<div data-role="main" class="ui-content" align="center">
+ <div style="width:40%;">
+  <ul data-role="controlgroup"data-type="vertical"data-theme="a">
+   <li class="ui-first-child ui-last-child">
+    <a href="http://www.capitalpuebla.com.mx/puebla/batalla-por-la-supervivencia-en-atlixco-la-sombra-tras-la-gloria-del-5-de-mayo" target="_self" data-role="button">
+     <h2>Informacion aqui</h2>
+    </a> 
+   </li> 
+   <li class="ui-first-child ui-last-child">
+    <a href="http://pueblanoticias.com.mx/noticia/atlixco-conmemora-un-aniversario-mas-de-la-batalla-del-4-de-mayo-101392/" target="_self" data-role="button">
+     <h2>Informacion aqui</h2>
+    </a>
+   </li>
+  </ul>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+  <div>
+       <img src="res/android/mdpi.png" width="50" height="50"> </div>
+       <div>
+       <h4>App6,DMMO</h4>
+       </div>
+       
+       </div>
+       </div>
+       </div>
+       </div>
+       </div>
+       </div>
+ 
+       </div>
+       </div>
+       </div>
+       </div>
+ </div>
+     </div>
+     </div>
+     </div>
+     </div>
+    
+    
+     <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Batalla del 5 de Mayo</h1>
+     </div>
+     <div data-role="content" align="center">
+       <div>
+         <p>
+       La batalla de Puebla fue un combate librado el 5 de mayo de 1862 en las cercanías de la ciudad de Puebla, entre los ejércitos de la República Mexicana, bajo el mando de Ignacio Zaragoza, y del Segundo Imperio Francés, dirigido por Charles Ferdinand Latrille, conde de Lorencez, durante la Segunda Intervención Francesa en México, cuyo resultado fue una victoria importante para los mexicanos ya que con unas fuerzas consideradas como inferiores lograron vencer a uno de los ejércitos más experimentados y respetados de su época. Pese a su éxito, la batalla no impidió la invasión del país, aunque sí que sería la primera batalla de una guerra que finalmente México ganaría. Los franceses regresarían al siguiente año, con lo que se libró una segunda batalla en Puebla en la que se enfrentaron 35 000 franceses contra 29 000 mexicanos (defensa que duró 62 días) y lograrían avanzar hasta la Ciudad de México, lo que permitió establecer el Segundo Imperio Mexicano. Finalmente, ante la incapacidad de consolidar un imperio y después de perder 11 000 hombres debido a la actividad guerrillera que nunca dejó de subsistir,1 los franceses se retiraron incondicionalmente del país en el año 1867.
+        </p>
+        <br>
+        <br>
+        <p>
+        PARA MAS INFORMACION CONSULTA ESTOS LINKS:
+        </p>
+<div data-role="main" class="ui-content" align="center">
+ <div style="width:40%;">
+  <ul data-role="controlgroup"data-type="vertical"data-theme="a">
+   <li class="ui-first-child ui-last-child">
+    <a href="https://es.wikipedia.org/wiki/Batalla_de_Puebla" target="_self" data-role="button">
+     <h2>Informacion aqui</h2>
+    </a> 
+   </li> 
+   <li class="ui-first-child ui-last-child">
+    <a href="https://webadictos.com/2017/05/04/historia-de-la-batalla-de-puebla-5-mayo/" target="_self" data-role="button">
+     <h2>Informacion aqui</h2>
+    </a>
+   </li>
+  </ul>
+   <div data-role="footer" data-theme="a" data-position="fixed">
+  <div>
+       <img src="res/android/mdpi.png" width="50" height="50"> </div>
+       <div>
+       <h4>App6,DMMO</h4>
+       </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     </div>
+  </div>
+      </div>
+       </div>
+     </div>
+       </div>
+       </div>
+   </div>
+       </div>
+      </div>
+ </div>
+     </div>
+     </div>
+     </div>
+     </div>
+    
+    
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>Heroes de la Batalla</h1>
+     </div>
+     
+      <div data-role="content" align="center">
+       <div>
+         <p>
+         Estos fueron los personajes principales de esta batalla:
+        </p>
+        <br>
+        <br>
+        <img src="imagenes/ignaciozaragoza.jpg" width="110" height="150"> <img src="imagenes/porfirio.jpg" width="110" height="150"> <img src="imagenes/felipeberrio.JPG" width="110" height="150"> <img src="imagenes/miguelnegrete.jpg" width="110" height="150" alt="d">
+ <div data-role="footer" data-theme="a" data-position="fixed">
+  <div>
+       <img src="res/android/mdpi.png" width="50" height="50"> </div>
+       <div>
+       <h4>App6,DMMO</h4>
+       </div>
+       </div>
+       </div>
+       </div>
+       </div>
+ 
+       </div>
+       </div>
+       </div>
+       </div>
+ </div>
+     </div>
+     </div>
+     </div>
+     </div>
+     
+
+     <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Monumentos de la Batalla</h1>
+     </div>
+     
+      <div data-role="content" align="center">
+       <div>
+         <p>
+        Aqui se muestran algunas imagenes de los diferentes monumentos en conmemoracion a la batalla de Puebla
+        </p>
+        <br>
+        <br>
+        <img src="imagenes/monumento1.jpg" width="110" height="150"> <img src="imagenes/monumento2.jpg" width="110" height="150"> <img src="imagenes/monumeto3.jpg" width="110" height="150"> <img src="imagenes/monumento4.jpg" width="110" height="150" alt="d">  <img src="imagenes/monumento5.jpg" width="110" height="150" alt="d">  <img src="imagenes/monumento6.jpg" width="110" height="150" alt="d">  <img src="imagenes/monumento7.jpg" width="110" height="150" alt="d"> <img src="imagenes/monumento8.jpg" width="110" height="150" alt="d">
+ <div data-role="footer" data-theme="a" data-position="fixed">
+  <div>
+       <img src="res/android/mdpi.png" width="50" height="50"> </div>
+       <div>
+       <h4>App6,DMMO</h4>
+       </div>
+       </div>
+       </div>
+       </div>
+       </div>
+    
+       </div>
+       </div>
+       </div>
+       </div>
+ </div>
+     </div>
+     </div>
+     </div>
+     </div>
+  
+</body>
+</html>
